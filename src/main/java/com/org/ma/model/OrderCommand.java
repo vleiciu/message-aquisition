@@ -7,6 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Builder
@@ -22,6 +23,10 @@ public class OrderCommand {
     @JsonProperty("correlation_id")
     @NotNull
     private String correlationId;
+
+    @JsonProperty("placed_at")
+    @NotNull
+    private LocalDateTime placedAt;
 
     @JsonProperty("items_list")
     private List<LineItems> itemsList;
