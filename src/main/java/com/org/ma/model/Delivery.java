@@ -23,6 +23,9 @@ public class Delivery {
     @NotNull
     private Integer restaurantId;
 
+    @JsonProperty
+    private Integer courierId;
+
     @JsonProperty(value = "correlation_id")
     @NotNull
     private String correlationId;
