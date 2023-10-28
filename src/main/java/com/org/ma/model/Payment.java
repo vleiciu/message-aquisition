@@ -15,10 +15,6 @@ import java.time.LocalDateTime;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Payment {
 
-    @JsonProperty("transaction_id")
-    @NotNull
-    private String transactionId;
-
     @JsonProperty("sender_id")
     @NotNull
     private String senderId;
